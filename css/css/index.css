@@ -1,0 +1,216 @@
+/* =============================
+   Estilos generales del cuerpo de la página
+============================= */
+body {
+  font-family: 'Special Elite', Tahoma, Geneva, Verdana, sans-serif; /* Fuente principal y alternativas */
+  text-align: center; /* Centra el texto en el cuerpo */
+  background-color: #4E71FF; /* Fondo azul vibrante */
+  color: #000000; /* Color de texto negro */
+  margin: 0; /* Elimina márgenes del navegador */
+  padding: 0; /* Elimina relleno por defecto */
+}
+
+/* =============================
+   Contenedor general para limitar ancho en pantallas grandes
+============================= */
+.container {
+  max-width: 1200px; /* Máximo ancho de contenido */
+  margin: 0 auto; /* Centra horizontalmente */
+  padding: 0 1rem; /* Espaciado horizontal interno */
+}
+
+/* =============================
+   Header con imagen y centrado
+============================= */
+header {
+  background-image: url('../icon/fuegoazul.jpeg'); /* Imagen de fondo */
+  background-size: cover; /* Escala la imagen para cubrir todo el header */
+  background-position: center; /* Centra la imagen */
+  height: 200px; /* Altura fija del header */
+  display: table; /* Usamos table para centrar contenido */
+  width: 100%;
+}
+
+header h1 {
+  color: #8DD8FF; /* Color del texto del título */
+  background-color: rgba(40, 83, 107, 0.7); /* Fondo azul semitransparente */
+  padding: 1em 2em; /* Relleno interno */
+  border-radius: 12px; /* Bordes redondeados */
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Añade un ícono musical después del título */
+h1::after {
+  content: " 🎵"; /* Ícono musical */
+  margin-left: 0.5em; /* Espacio entre texto e ícono */
+}
+
+/* =============================
+   Menú sticky visible
+============================= */
+nav {
+  position: sticky; /* Menú se queda fijo al hacer scroll */
+  top: 0; /* Se pega al borde superior */
+  background-color: #5409DA; /* Fondo morado oscuro */
+  z-index: 1000; /* Aparece por encima de otros elementos */
+  padding: 15px 0; /* Relleno vertical */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para dar profundidad */
+}
+
+/* Contenedor interno para centrar menú */
+nav div {
+  max-width: 1200px; /* Máximo ancho del menú */
+  margin: 0 auto; /* Centrado horizontal */
+  display: table; /* Usamos table para centrar horizontalmente */
+  width: 100%;
+}
+
+nav div a {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Enlaces del menú */
+nav a {
+  text-decoration: none; /* Sin subrayado */
+  color: #ffffff; /* Texto blanco */
+  margin: 0 15px; /* Espaciado entre enlaces */
+  font-weight: bold; /* Texto en negrita */
+  transition: color 0.3s; /* Transición suave en el cambio de color */
+  padding: 8px 12px; /* Relleno interno */
+  border-radius: 6px; /* Bordes redondeados */
+}
+
+/* Estilos para hover y enlace activo */
+nav a:hover,
+nav a.active {
+  color: #8DD8FF; /* Color azul claro al pasar el mouse o activo */
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
+}
+
+/* =============================
+   Área principal
+============================= */
+main.container {
+  padding: 2em 1rem; /* Relleno interior */
+  text-align: left; /* Alineación izquierda para mejor lectura */
+}
+
+/* Secciones dentro del contenido principal */
+section {
+  margin-bottom: 2em; /* Espacio inferior entre secciones */
+}
+
+/* =============================
+   Footer o pie de página
+============================= */
+footer {
+  background-color: #BBFBFF; /* Fondo celeste claro */
+  color: #000000; /* Texto negro */
+  padding: 2em 1rem; /* Relleno interior */
+  text-align: center; /* Centra el texto */
+}
+
+/* =============================
+   Estilos para listas de enlaces en el footer y enlaces útiles
+============================= */
+.footer-links-list,
+.enlaces-utiles ul {
+  list-style-type: none; /* Quita viñetas */
+  padding: 0; /* Elimina relleno */
+  display: block; /* Asegura que estén en bloque */
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* Centrado horizontal */
+}
+
+.footer-links-list li,
+.enlaces-utiles ul li {
+  display: block; /* Muestra los elementos uno debajo del otro */
+  padding: 5px 0; /* Espaciado vertical entre enlaces */
+}
+
+/* Enlaces dentro del footer */
+footer a {
+  color: #000000; /* Color del enlace negro */
+  text-decoration: underline; /* Subrayado */
+  margin: 0 10px; /* Espaciado entre enlaces */
+  transition: transform 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el mouse en enlaces del footer */
+footer a:hover {
+  color: #000000; /* Conserva el color negro */
+  transform: scale(1.2); /* Aumenta ligeramente el tamaño */
+}
+
+/* Texto legal al final del footer */
+.legal {
+  margin-top: 1em; /* Espacio superior */
+  font-size: 0.9em; /* Tamaño de fuente más pequeño */
+}
+
+/* =============================
+   Media queries
+============================= */
+
+/* Dispositivos con ancho máximo de 768px (tablets y móviles) */
+@media (max-width: 768px) {
+  nav div {
+    display: block; /* Menú vertical en móviles */
+    width: 100%;
+    text-align: center;
+  }
+
+  nav div a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav a {
+    margin: 10px 0; /* Espaciado vertical */
+    padding: 12px 20px; /* Más relleno para facilitar clics */
+    font-size: 1.1rem; /* Aumenta el tamaño del texto */
+  }
+
+  main.container {
+    padding: 1rem; /* Menor relleno para pantallas pequeñas */
+  }
+
+  footer a {
+    margin: 5px; /* Menos espacio entre enlaces */
+    font-size: 1rem; /* Tamaño adecuado para móviles */
+  }
+
+  .footer-links-list,
+  .enlaces-utiles ul {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-links-list li,
+  .enlaces-utiles ul li {
+    display: block;
+    padding: 5px 0;
+  }
+}
+
+/* Dispositivos muy pequeños (teléfonos con ancho máximo de 480px) */
+@media (max-width: 480px) {
+  header {
+    height: 150px; /* Menor altura del encabezado */
+  }
+
+  header h1 {
+    font-size: 1.5rem; /* Tamaño más pequeño del título */
+    padding: 0.5em 1em; /* Menos relleno */
+  }
+
+  nav a {
+    font-size: 1rem; /* Tamaño de fuente menor */
+    padding: 10px 15px; /* Ajuste de relleno */
+  }
+}

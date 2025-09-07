@@ -1,0 +1,106 @@
+/* --- Menú sticky con efecto especial al activarse --- */
+nav.sticky-active {
+  background-color: #3a05a6; /* Cambia el fondo a un tono más oscuro */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Añade sombra para destacar el nav */
+}
+
+/* --- Enlaces del nav con estructura en <div> --- */
+nav div a {
+  text-decoration: none; /* Quita el subrayado del enlace */
+  color: #000000; /* Texto en negro */
+  font-weight: bold; /* Negrita para énfasis */
+  margin: 0 15px; /* Espaciado horizontal */
+  transition: color 0.3s; /* Transición suave en color */
+}
+
+/* --- Tabla de contenido estilizada --- */
+table {
+  margin: 20px auto; /* Centra la tabla y separa del contenido superior */
+  border-collapse: collapse; /* Fusiona bordes de celdas adyacentes */
+  width: 80%; /* Ancho relativo */
+  max-width: 600px; /* Limita el ancho en pantallas grandes */
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+th, td {
+  border: 1px solid #ccc; /* Borde gris claro */
+  padding: 10px; /* Espaciado interno */
+}
+
+th {
+  background-color: #f2f2f2; /* Fondo gris claro para encabezados */
+}
+
+/* --- Botón de compra llamativo --- */
+.btn {
+  display: inline-block; /* Se comporta como botón */
+  padding: 10px 20px; /* Tamaño del botón */
+  margin-top: 20px; /* Espacio arriba del botón */
+  background-color: #2aac12; /* Verde brillante */
+  color: rgb(0, 0, 0); /* Texto negro */
+  text-decoration: none; /* Sin subrayado */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición suave de color */
+}
+
+.btn:hover {
+  background-color: #228c10; /* Verde más oscuro al pasar el mouse */
+}
+
+/* --- Lista de puntos de venta sin viñetas --- */
+ul.lista-venta {
+  list-style: none; /* Elimina viñetas */
+  padding: 0; /* Elimina relleno */
+}
+
+/* --- Enlaces útiles en sección especial --- */
+.enlaces-utiles {
+  text-align: center; /* Centrado horizontal */
+  margin-top: 1em; /* Separación superior */
+}
+
+/* --- Contenedor de botones con imágenes --- */
+.image-buttons {
+  display: table; /* Usamos table para simular dos columnas */
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+}
+
+/* --- Estilo individual de cada botón de imagen --- */
+.image-button {
+  display: table-cell; /* Simula columnas */
+  border: 2px solid #333; /* Borde oscuro */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta lo que se salga del contenedor */
+  cursor: pointer; /* Cursor de mano al pasar por encima */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  background-color: white; /* Fondo blanco */
+  padding: 0 10px;
+  vertical-align: top;
+}
+
+/* --- Imagen dentro del botón --- */
+.image-button img {
+  width: 100%; /* Imagen ocupa todo el ancho */
+  aspect-ratio: 4 / 5; /* Proporción de aspecto fija */
+  object-fit: cover; /* Cubre sin distorsionar */
+  display: block; /* Comportamiento tipo bloque */
+  border-radius: 6px; /* Bordes redondeados en imagen */
+}
+
+/* --- Efecto visual al pasar el mouse --- */
+.image-button:hover,
+.image-button:focus {
+  outline: none; /* Elimina el borde predeterminado al enfocar */
+  transform: scale(1.05); /* Escala ligeramente */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra alrededor */
+}
+/* Agrega esto a comprar-entradas.css */
+.image-buttons-row {
+  display: table-row;
+}

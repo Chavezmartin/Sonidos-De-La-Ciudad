@@ -1,0 +1,92 @@
+body {
+  font-family: 'Special Elite', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #4E71FF; /* Fondo azul vibrante */
+  color: #000000; /* Texto negro */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url('./icon/fuegoazul.jpeg');
+  background-size: cover; /* Cubre todo el header */
+  background-position: center; /* Centra la imagen */
+  height: 200px;
+  display: table; /* Centrado vertical usando table */
+  width: 100%;
+}
+
+header h1 {
+  color: #8DD8FF;
+  padding: 1em;
+  display: table-cell; /* Centrado vertical */
+  vertical-align: middle;
+  text-align: center;
+}
+
+nav {
+  background-color: #5409DA; /* Fondo violeta */
+  padding: 1em;
+}
+
+nav a {
+  color: rgb(0, 0, 0); /* Texto negro */
+  text-decoration: none; /* Sin subrayado */
+}
+
+nav a:hover {
+  color: #008cff; /* Azul claro al pasar el mouse */
+}
+
+/* Lista de enlaces en el footer alineados horizontalmente */
+.footer-links-list {
+  list-style-type: none; /* Sin viñetas */
+  display: table; /* Alineación horizontal tipo tabla */
+  width: auto;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cada enlace del footer como celda de tabla con espacio */
+.footer-links-list li {
+  display: table-cell;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/* Lista de enlaces útiles en el footer */
+.enlaces-utiles ul {
+  list-style-type: none; /* Sin viñetas */
+  padding: 0;
+}
+
+/* Contenedor de enlaces útiles centrado */
+.enlaces-utiles {
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* Estilos generales del footer */
+footer {
+  background-color: #BBFBFF; /* Fondo celeste claro */
+  color: #000000;
+  padding: 2em 1em;
+}
+
+/* Enlaces dentro del footer */
+footer a {
+  text-decoration: none; /* Sin subrayado */
+  color: inherit; /* Hereda el color del texto */
+}
+
+/* Efecto hover en los enlaces del footer */
+footer a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Copyright centrado al final del footer */
+footer .copyright {
+  text-align: center;
+  margin-top: 1em;
+}

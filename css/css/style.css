@@ -1,0 +1,128 @@
+/* Estilos generales del cuerpo de la página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía principal y alternativas */
+  text-align: center; /* Centra el texto de forma predeterminada */
+  background-color: #fef6e4; /* Color de fondo suave */
+  color: #333; /* Color de texto oscuro gris */
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina relleno por defecto */
+}
+
+/* Encabezado principal con imagen de fondo */
+header {
+  background-image: url('./icon/descarga.jpg'); /* Imagen de fondo del header */
+  background-size: cover; /* Ajusta la imagen para cubrir toda el área */
+  background-position: center; /* Centra la imagen */
+  height: 200px; /* Altura fija del encabezado */
+  display: table; /* Usamos table para centrar contenido */
+  width: 100%;
+}
+
+/* Título dentro del header */
+header h1 {
+  color: #ffffff; /* Texto blanco */
+  background-color: rgba(40, 83, 107, 0.7); /* Fondo semitransparente azul oscuro */
+  padding: 1em 2em; /* Espaciado interno */
+  border-radius: 12px; /* Bordes redondeados */
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Barra de navegación */
+nav {
+  background-color: #f582ae; /* Fondo rosado pastel */
+  padding: 1em; /* Espaciado interno */
+}
+
+/* Contenedor de los enlaces de navegación */
+.nav-links {
+  text-align: center; /* Centra los enlaces horizontalmente */
+}
+
+/* Enlaces del menú de navegación */
+.nav-links a {
+  text-decoration: none; /* Sin subrayado */
+  color: #333; /* Color oscuro para los enlaces */
+  margin: 0 15px; /* Espacio horizontal entre enlaces */
+  font-weight: bold; /* Negrita */
+  transition: color 0.3s; /* Transición suave al cambiar color */
+}
+
+/* Cambio de color al pasar el cursor sobre los enlaces */
+.nav-links a:hover {
+  color: #f07167; /* Color coral al hacer hover */
+}
+
+/* Contenido principal */
+main {
+  padding: 2em; /* Espaciado interno general */
+}
+
+/* Separación entre secciones */
+section {
+  margin-bottom: 2em; /* Espacio debajo de cada sección */
+}
+
+/* Pie de página */
+footer {
+  background-color: #8e9aaf; /* Fondo gris-lila */
+  color: #fff; /* Texto blanco */
+  padding: 2em 1em; /* Espaciado interno */
+}
+
+/* Listas de enlaces en el footer */
+.footer-links-list,
+.footer-enlaces ul {
+  list-style-type: none; /* Sin viñetas */
+  padding: 0; /* Sin espacio interior */
+  display: table; /* Usamos table para alinear horizontalmente */
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cada enlace del footer como celda de tabla con espacio */
+.footer-links-list li,
+.footer-enlaces ul li {
+  display: table-cell;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+/* Estilo de los enlaces dentro del footer */
+.footer-links-list li a,
+.footer-enlaces ul li a,
+.footer-info a {
+  color: #fef6e4; /* Color claro sobre fondo oscuro */
+  text-decoration: underline; /* Subrayado */
+  margin: 0 10px; /* Separación horizontal */
+  transition: color 0.3s; /* Transición suave al cambiar color */
+}
+
+/* Cambio de color al hacer hover en enlaces del footer */
+.footer-links-list li a:hover,
+.footer-enlaces ul li a:hover,
+.footer-info a:hover {
+  color: #ffd6d6; /* Rosa muy claro al pasar el cursor */
+}
+
+/* Contenedor de enlaces secundarios en el footer */
+.footer-enlaces {
+  text-align: center; /* Centrado horizontal */
+  margin-top: 1em; /* Espacio superior */
+}
+
+/* Información legal o extra del footer */
+.footer-info {
+  text-align: center; /* Centrado del texto */
+  margin-top: 1em; /* Espacio superior */
+  font-size: 0.9em; /* Tamaño de fuente ligeramente reducido */
+}
+
+/* Estilo para enlaces activos o ya visitados y activos */
+a.active,
+a.active:visited {
+  color: #020aff; /* Azul fuerte para destacar */
+  text-decoration: none; /* Sin subrayado */
+}

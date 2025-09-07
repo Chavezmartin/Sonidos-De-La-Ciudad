@@ -1,0 +1,114 @@
+/* ================================ 
+   NAVEGACIÓN (MENÚ) - adicional
+================================= */
+nav.sticky-active {
+    background-color: #3a05a6; /* Fondo más oscuro cuando está activo */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Sombra para resaltar el menú fijo */
+}
+
+nav div {
+    text-align: center; /* Centra los enlaces dentro del div */
+}
+
+/* ================================
+   CONTENIDO PRINCIPAL - listas y secciones
+================================= */
+ul, ol {
+    list-style-type: none; /* Elimina viñetas y numeración */
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+/* ================================
+   TABLAS
+================================= */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 5px solid #ccc;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+/* ================================
+   PIE DE PÁGINA (FOOTER) - estructura general
+================================= */
+
+/* Centrar todo el contenido del footer */
+footer {
+  text-align: center; /* Centra el texto del footer */
+  padding: 2em 0; /* Espacio interno */
+}
+
+/* Redes sociales: list-style inline quitado */
+.footer-links-list {
+  list-style: none; /* Elimina viñetas */
+  padding: 0; /* Elimina padding */
+  margin: 0 auto 1em; /* Centra la lista */
+  display: inline-block; /* Cambia a bloque para centrar */
+  justify-content: center; /* Alinea a la derecha */
+  width: fit-content; /* Ajusta el ancho al contenido */
+  gap: 1em; /* Espacio entre los enlaces */
+}
+
+/* Enlaces útiles (lista con clase específica) */
+.enlaces-utiles {
+  margin: 2em auto; /* Centra el bloque */
+}
+
+.enlaces-utiles p {
+  margin-bottom: 0.5em; /* Espacio entre el párrafo y la lista */
+  font-weight: bold; /* Negrita para el título */
+}
+
+.enlaces-utiles ul {
+  list-style: none; /* Elimina viñetas */
+  padding: 0; /* Elimina padding */
+  margin: 0 auto; /* Centra la lista */
+  display: inline-block; /* Cambia a bloque para centrar */
+  text-align: center; /* Centra el texto de los enlaces */
+}
+
+.enlaces-utiles ul li {
+  display: block; /* Cambia a bloque para que cada enlace ocupe una línea */
+  margin: 1em 0; /* Espacio entre los enlaces */
+}
+
+.enlaces-utiles ul li a {
+  color: inherit; /* Hereda el color del padre */
+  text-decoration: none;  /* Sin subrayado */
+}
+
+/* Enlaces legales (div con clase .legal en lugar de .footer-legal) */
+footer .legal {
+  margin-top: 3em;
+  font-size: 0.9em;
+  color: #000000;
+}
+
+footer .legal a {
+  color: #0b0ec7;
+  text-decoration: underline;
+  padding: 0 1em;
+}
+
+/* ================================
+   RESPONSIVE MOBILE
+================================= */
+@media (max-width: 768px) {
+  .enlaces-utiles ul {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .footer-links-list {
+    gap: 0.5em;
+  }
+}

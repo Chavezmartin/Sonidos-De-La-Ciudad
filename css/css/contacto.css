@@ -1,0 +1,96 @@
+/* =============================
+   MENÚ DE NAVEGACIÓN STICKY (clase adicional)
+============================= */
+nav.sticky-active {
+    background-color: #3a05a6; /* Color más oscuro cuando está activo */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Sombra para resaltar */
+}
+
+/* =============================
+   CONTENIDO PRINCIPAL (extra)
+============================= */
+section {
+    margin-bottom: 2em; /* Espacio entre secciones */
+    transition: transform 0.4s ease; /* Transición suave para el efecto flotante */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Levanta la sección ligeramente */
+}
+
+/* =============================
+   FORMULARIO DE CONTACTO
+============================= */
+form {
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrado horizontal */
+    text-align: center; /* Centra el contenido del formulario */
+}
+
+input,
+textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Margen vertical entre campos */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+}
+
+input[type="submit"] {
+    background-color: #0dff00; /* Verde neón */
+    color: rgb(0, 0, 0); /* Texto negro */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cambia el cursor a mano */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+input[type="submit"]:hover {
+    background-color: #00b31ed8; /* Verde más oscuro al pasar el mouse */
+}
+
+/* =============================
+   INFORMACIÓN DE CONTACTO
+============================= */
+.contact-info {
+    margin-top: 20px; /* Separación superior */
+}
+
+/* =============================
+   PIE DE PÁGINA (FOOTER) - ajustes en listas y enlaces
+============================= */
+
+/* Reemplazo de display: grid y flex-wrap */
+.footer-links-list,
+.enlaces-utiles ul {
+    list-style-type: none; /* Elimina viñetas */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Elimina márgenes por defecto */
+    text-align: center; /* Centra los elementos hijos inline */
+}
+
+/* Estilos para los ítems individuales */
+.footer-links-list li,
+.enlaces-utiles ul li {
+    display: inline-block; /* Ubica elementos uno al lado del otro */
+    margin: 0 5px; /* Espacio horizontal entre ítems (similar a gap) */
+}
+
+footer a {
+    color: #000000; /* Enlaces en negro */
+    text-decoration: underline; /* Subrayado */
+    margin: 0 10px; /* Espacio entre enlaces */
+}
+
+footer a:hover {
+    color: #000000; /* No cambia el color al pasar el mouse */
+}
+
+/* =============================
+   ENFOQUE EN CAMPOS DE FORMULARIO
+============================= */
+input:focus,
+textarea:focus {
+    outline: 2px solid #8DD8FF; /* Borde celeste al enfocar */
+    background-color: #f0f8ff; /* Fondo claro al enfocar */
+    transition: background-color 0.3s ease, outline 0.3s ease; /* Transiciones suaves */
+}

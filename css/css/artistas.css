@@ -1,0 +1,62 @@
+/* Sección de artistas con diseño de grilla */
+.artistas {
+    display: table; /* Usamos table para simular la grilla */
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 1.5rem; /* Simula el gap */
+    padding: 1rem;
+}
+
+/* Cada fila de artistas */
+.artistas-row {
+    display: table-row;
+}
+
+/* Tarjetas individuales de cada artista */
+.artistas article {
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: table-cell; /* Para simular columnas */
+    vertical-align: top;
+    text-align: center; /* Centra el contenido */
+    width: 33.33%; /* Simula 3 columnas */
+}
+
+.artistas article:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen de cada artista */
+.artistas img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Nombre del artista */
+.artistas h3 {
+    margin: 0.5em 0;
+    font-family: 'Special Elite', cursive;
+}
+
+/* Descripción del artista */
+.artistas p {
+    padding: 0 1rem 1rem;
+}
+
+/* Estilos responsivos: en pantallas chicas se muestra una sola columna */
+@media (max-width: 768px) {
+    .artistas {
+        display: block; /* Cambia a bloque para una sola columna */
+        border-spacing: 0;
+    }
+    .artistas article {
+        display: block;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}

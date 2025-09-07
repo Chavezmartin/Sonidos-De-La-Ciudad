@@ -1,0 +1,130 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: 'Special Elite', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #eddc98;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado con imagen de fondo */
+header {
+    background-image: url('../icon/fuegoazul.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: table; /* Usamos table para centrar verticalmente */
+    width: 100%; /* Necesario para table */
+}
+
+header h1 {
+    color: #8DD8FF;
+    background-color: rgba(40, 83, 107, 0.7);
+    padding: 1em 2em;
+    border-radius: 12px;
+    display: table-cell; /* Para centrar verticalmente */
+    vertical-align: middle; /* Centrado vertical */
+    text-align: center;
+}
+
+/* Barra de navegación sticky */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #FE7743;
+    z-index: 1000;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos de enlaces de navegación */
+nav a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Enlace activo */
+a.active,
+a.active:visited {
+    color: #020aff;
+    text-decoration: none;
+}
+
+/* Contenedor principal */
+main {
+    padding: 2em;
+}
+
+/* Pie de página */
+footer {
+    background-color: #BBFBFF;
+    color: #000000;
+    padding: 2em 1em;
+}
+
+/* Enlaces del pie */
+.footer-links,
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+    display: block; /* Usamos table para alinear horizontalmente */
+    width: fit-content; /* Ajusta el ancho al contenido */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Agregado para simular el gap usando padding en los hijos */
+.footer-links li,
+.footer-links-list li {
+    display: table-cell;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.footer-links a,
+.footer-links-list a {
+    color: #000000;
+    text-decoration: underline;
+    margin: 0 1px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-links-list a:hover {
+    color: #000000;
+}
+
+/* Texto legal en el footer */
+.legal {
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+/* Enlaces útiles uno debajo del otro */
+.enlaces-utiles ul {
+    display: block ; /* Asegura que los enlaces estén en bloque */
+}
+
+.enlaces-utiles ul li {
+    display: block; /* Cada enlace en una nueva línea */
+    text-align: center; /* Centra los enlaces */
+    padding-left: 0; /* Elimina padding izquierdo */
+    padding-right: 0; /* Elimina padding derecho */
+    margin-bottom: 1em; /* Espacio entre enlaces, opcional */
+}
+
+/* Responsive: ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    main {
+        padding: 1em;
+    }
+}

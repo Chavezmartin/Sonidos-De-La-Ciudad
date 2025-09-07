@@ -1,0 +1,179 @@
+/* ================================
+   CABECERA DEL SITIO (adicional)
+================================= */
+header {
+  padding: 20px; /* Espacio interior extra */
+}
+
+/* Pseudoelementos decorativos del título */
+header h1::before {
+  content: "🔥"; /* Emoji de fuego */
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ================================
+   MENÚ DE NAVEGACIÓN - enlaces (diferente color y selector)
+================================= */
+nav div a {
+  color: #000000; /* Color blanco (antes negro) */
+}
+
+nav div a:hover {
+  color: #8DD8FF;
+}
+
+/* ================================
+================================= */
+main {
+  display: table; /* Usamos table para simular el centrado vertical */
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+}
+
+main > * {
+  display: table-row;
+}
+
+main h1,
+main p {
+  text-align: center;
+}
+
+/* ================================
+   ESTILO RESPONSIVO
+================================= */
+@media (max-width: 768px) {
+  main {
+    padding: 1em;
+    display: block; /* Para móviles, vuelve a bloque */
+  }
+
+  nav div a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* ================================
+   TABLA - estilos nuevos
+================================= */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 600px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+th.colspan-title {
+  background-color: #5409DA;
+  color: #ffffff;
+}
+
+/* ================================
+   BOTÓN
+================================= */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px auto 0 auto;
+  background-color: #2aac12;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #228c10;
+  transform: scale(1.05);
+}
+
+/* ================================
+   LISTA DE PUNTOS DE VENTA
+================================= */
+ul.lista-venta {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+/* ================================
+   PIE DE PÁGINA - detalles nuevos
+================================= */
+footer {
+  text-align: center;
+}
+
+.footer-links-list {
+  display: table; /* Usamos table para alinear horizontalmente */
+  width: auto;
+  padding: 0;
+  align-items: center;
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-links-list li {
+  display: table-cell;
+  text-align: center;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+/* Icono decorativo antes de enlaces en footer */
+.footer-links a::before {
+  content: "🔗 ";
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #000000;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #000000;
+}
+
+.enlaces-utiles {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.legal {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* ================================
+   ACCESIBILIDAD: ESTILO FOCUS
+================================= */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+.btn:focus {
+  outline: 2px dashed #fff;
+  outline-offset: 4px;
+  background-color: #020aff;
+  color: #ffffff;
+}
